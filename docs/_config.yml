@@ -1,0 +1,9 @@
+title: app
+description: a command-line tool built from go-cli-template
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+src: https://github.com/sahithyandev/go-cli-template/blob/main
