@@ -91,6 +91,14 @@ jobs:
             exit 1
           fi
 
+          # 0.0.0 is the template placeholder; it never releases even if a
+          # CHANGELOG section exists
+          if [ "$num" = "0.0.0" ]; then
+            echo "::notice title=Release skipped::cmd/VERSION is still the template placeholder 0.0.0, so no tag or release was created"
+            echo "created=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
           # require a non-empty CHANGELOG section for this version; no section -> skip
           if ! sh scripts/release-notes.sh "$num" > /dev/null; then
             echo "::notice title=Release skipped::CHANGELOG.md has no non-empty '## $num' section (cmd/VERSION is $num), so no tag or release was created"
