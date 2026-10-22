@@ -1,5 +1,7 @@
 ---
 title: Continuous integration
+nav_group: Features
+nav_order: 3
 ---
 
 # Continuous integration

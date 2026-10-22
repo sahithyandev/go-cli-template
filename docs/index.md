@@ -1,5 +1,7 @@
 ---
 title: app
+nav_group: Overview
+nav_order: 1
 ---
 
 # app
@@ -18,18 +20,18 @@ make run     # go run .
 
 ## What the template includes
 
-The [template feature guide](features/index.md) explains each of these in
+The [template feature guide]({% link features/index.md %}) explains each of these in
 depth, with the files that implement them:
 
-- [Automatic releases](features/automatic-releases.md) from `cmd/VERSION` and
-  `CHANGELOG.md`, with [an SBOM](features/sbom.md) attached to every release
-- [Continuous integration](features/continuous-integration.md) across Linux,
+- [Automatic releases]({% link features/automatic-releases.md %}) from `cmd/VERSION` and
+  `CHANGELOG.md`, with [an SBOM]({% link features/sbom.md %}) attached to every release
+- [Continuous integration]({% link features/continuous-integration.md %}) across Linux,
   macOS, and Windows, with weekly govulncheck
-- [Pre-commit hooks](features/pre-commit-hooks.md) for gofmt and release file
+- [Pre-commit hooks]({% link features/pre-commit-hooks.md %}) for gofmt and release file
   checks
-- [One-line install scripts](features/install-scripts.md) for end users
-- A [Jekyll docs site](features/docs-site.md) on GitHub Pages
-- A [CLI project layout](features/cli-project-layout.md) with an embedded
+- [One-line install scripts]({% link features/install-scripts.md %}) for end users
+- A [Jekyll docs site]({% link features/docs-site.md %}) on GitHub Pages
+- A [CLI project layout]({% link features/cli-project-layout.md %}) with an embedded
   version and an example command
 
 ## Documentation

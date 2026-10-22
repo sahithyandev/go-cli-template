@@ -1,5 +1,7 @@
 ---
 title: Automatic releases
+nav_group: Features
+nav_order: 1
 ---
 
 # Automatic releases
@@ -56,5 +58,5 @@ tagging step.
 - `.goreleaser.yaml` - build matrix, archives, and release settings
 - `.github/workflows/ci.yml` - the `tag`, `release`, and `untag` jobs
 
-See [SBOM on every release](sbom.md) for the extra artifact that rides along
+See [SBOM on every release]({% link features/sbom.md %}) for the extra artifact that rides along
 with each release.

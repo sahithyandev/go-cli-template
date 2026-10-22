@@ -1,5 +1,7 @@
 ---
 title: SBOM on every release
+nav_group: Features
+nav_order: 2
 ---
 
 # SBOM on every release
@@ -32,12 +34,12 @@ The file is `sbom.cdx.json`, in CycloneDX JSON format.
   `checksums.txt`
 
 Because it is generated for the tagged commit, the SBOM always matches the
-released [archives](automatic-releases.md).
+released [archives]({% link features/automatic-releases.md %}).
 
 ## Keep it in sync with security advice
 
 The SBOM answers "what do we ship". The weekly
-[govulncheck run](continuous-integration.md) answers "what should we worry
+[govulncheck run]({% link features/continuous-integration.md %}) answers "what should we worry
 about in that inventory". Together they give the standard supply-chain story:
 
 1. an advisory names an affected module or standard function

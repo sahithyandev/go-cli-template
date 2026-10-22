@@ -1,5 +1,7 @@
 ---
 title: Pre-commit hooks
+nav_group: Features
+nav_order: 4
 ---
 
 # Pre-commit hooks
@@ -13,7 +15,7 @@ without installing a tool.
 `.githooks/pre-commit` runs two checks on every commit:
 
 - `scripts/check-release-files.sh`, which validates the `cmd/VERSION` and
-  `CHANGELOG.md` formats described in [Automatic releases](automatic-releases.md)
+  `CHANGELOG.md` formats described in [Automatic releases]({% link features/automatic-releases.md %})
 - gofmt: staged `.go` files that differ from the index are formatted and
   re-staged, so the committed bytes are already formatted
 
@@ -48,5 +50,5 @@ one canonical hook.
 - `hooks_test.go` - side-effect hook installation on `go test`
 - `Makefile` - the `hooks` target
 
-See also [Continuous integration](continuous-integration.md) for the same
+See also [Continuous integration]({% link features/continuous-integration.md %}) for the same
 guards enforced server-side.

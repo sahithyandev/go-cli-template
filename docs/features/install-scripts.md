@@ -1,11 +1,13 @@
 ---
 title: One-line install scripts
+nav_group: Features
+nav_order: 5
 ---
 
 # One-line install scripts
 
 The template ships installers, so the first published
-[release](automatic-releases.md) can be installed by end users without
+[release]({% link features/automatic-releases.md %}) can be installed by end users without
 installing Go. The scripts run on Linux, macOS, and Windows.
 
 ## Usage
@@ -47,7 +49,7 @@ app data directory and points out the `PATH` entry to add.
 Both scripts hardcode the repo slug and binary name at the top, with a comment
 marking the spot. When a project renames those two values, the installers
 keep working with no other change. See
-[Template features](index.md) for the full rename checklist.
+[Template features]({% link features/index.md %}) for the full rename checklist.
 
 ## Related files
 

@@ -1,5 +1,7 @@
 ---
 title: Jekyll docs site
+nav_group: Features
+nav_order: 6
 ---
 
 # Jekyll docs site
@@ -47,7 +49,7 @@ set to GitHub Actions; the workflow then keeps the site current on its own.
 An overview with links out to one page per feature keeps single-subject
 pages searchable and readable on their own. Keep prose short on the index
 and deep in the feature pages, and cross-link between the two levels.
-This [features section](index.md) is an example of the pattern.
+This [features section]({% link features/index.md %}) is an example of the pattern.
 
 ## Related files
 

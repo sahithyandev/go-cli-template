@@ -1,5 +1,7 @@
 ---
 title: CLI project layout
+nav_group: Features
+nav_order: 7
 ---
 
 # CLI project layout
@@ -21,7 +23,7 @@ one sitting and structured the way a real project grows.
   out-compared text
 
 The binary reports its version from a compile-time embedded `cmd/VERSION`
-file, so the CLI and the [release pipeline](automatic-releases.md) share one
+file, so the CLI and the [release pipeline]({% link features/automatic-releases.md %}) share one
 source of truth.
 
 ## Adding a command
