@@ -1,5 +1,5 @@
 title: app
-description: a command-line tool built from go-cli-template
+description: a command-line tool built from the go-cli-template project, with automatic releases, SBOM artifacts, CI, pre-commit hooks, install scripts, and a docs site
 
 defaults:
   - scope:
